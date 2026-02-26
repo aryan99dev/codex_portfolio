@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
+}
+
+.section-shell {
+  @apply mx-auto max-w-6xl px-6 py-20 md:py-28;
+}
+
+.section-title {
+  @apply text-3xl font-bold tracking-tight md:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-2xl text-slate-600 dark:text-slate-300;
+}
+
+.grid-bg {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
